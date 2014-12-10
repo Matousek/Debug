@@ -8,7 +8,7 @@ use Tracy\Debugger;
  * Debugging
  * 
  * @author Jan Matoušek (matousek.vr@gmail.com) 
- * @version 1.0
+ * @version 2.0
  */
 class Debug
 {
