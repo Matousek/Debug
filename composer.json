@@ -1,0 +1,17 @@
+{
+    "name": "janmatousek/debug",
+    "description": "Wrapper for tracy",
+    "require": {
+        "tracy/tracy": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jan Matoušek",
+            "email": "matousek.vr@gmail.com"
+        }
+    ],
+    "autoload": {
+            "files": ["src/Dump.php"]
+    }
+}

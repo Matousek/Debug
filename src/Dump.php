@@ -2,7 +2,7 @@
 
 namespace Matousek;
 
-use \Nette\Diagnostics\Debugger;
+use Tracy\Debugger;
 
 /**
  * Debugging
@@ -21,10 +21,16 @@ class Debug
      * @param int $deph max deph
      * @return mixed
      */
-    public static function dump($var, $deph = 3, $len = 150)
+    public static function dump($var, $deph = null, $len = null)
     {
-        Debugger::$maxDepth = $deph;
-        Debugger::$maxLen = $len;
+        if(!is_null($deph)){
+            Debugger::$maxDepth = $deph;
+        }
+        
+        if(!is_null($len)){
+            Debugger::$maxLen = $len;
+        }
+
         return Debugger::dump($var);
     }
 
